@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+.parent {
+    display: flex;
+    /* flex-direction: column; */
+    background-color:skyblue;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.drop {
+    animation: bahni 3s ease-in 0s infinite forwards;
+    position: relative;
+}
+@keyframes bahni {
+    from {
+        top: 0px;
+    }
+    to {
+        top: calc(100vh - 20px);
+    }
+}
+.container1 {
+    background-color: blue;
+    margin-left: 0px;
+    margin-bottom: -45px;
+    border: 50px solid skyblue;
+    border-top: 0px;
+    border-bottom: 100px solid blue;
+    /* height: 50px;
+    width: 50px; */
+}
+.container2 {
+    background-color: blue;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
